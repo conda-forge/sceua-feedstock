@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sceua
-  version: "0.1.0"
+  version: "0.2.0"
   python_min: "3.10"
 
 package:
@@ -11,12 +11,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sceua-${{ version }}.tar.gz
-  sha256: c5eafe6569747112b1227e7c80521bdcf4b02cbfa9408f5af0ad9225846e1a6f
+  sha256: d2cda78b6dfd2c0722dfdb0da42831184d37ef79a5087a0e05bdd97253350a4b
 
 build:
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
